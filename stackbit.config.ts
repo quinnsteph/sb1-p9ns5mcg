@@ -6,4 +6,14 @@ export default defineStackbitConfig({
     "ssgName": "custom",
     "contentSources": [],
     "postInstallCommand": "npm i --no-save @stackbit/types"
+    styleObjectModelName: 'Style',
+    devCommand: 'npm run dev',
+    buildCommand: 'npm run build',
+    experimental: {
+        ssg: {
+            name: 'vite',
+            runtime: 'nodejs18.x',
+            startCommand: 'npm run dev'
+        }
+    }
 })
